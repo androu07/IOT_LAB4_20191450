@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ligasFragment">
+
+    <fragment
+        android:id="@+id/ligasFragment"
+        android:name="com.example.lab4.fragmentos.LigaFragment"
+        android:label="Ligas" />
+
+    <fragment
+        android:id="@+id/posicionesFragment"
+        android:name="com.example.lab4.fragmentos.PosicionesFragment"
+        android:label="Posiciones" />
+
+    <fragment
+        android:id="@+id/resultadosFragment"
+        android:name="com.example.lab4.fragmentos.ResultadosFragment"
+        android:label="Resultados" />
+
+</navigation>
