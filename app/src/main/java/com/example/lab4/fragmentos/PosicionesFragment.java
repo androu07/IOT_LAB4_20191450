@@ -93,7 +93,7 @@ public class PosicionesFragment extends Fragment {
                         adapter = new PosicionesAdapter(equipos);
                         recyclerViewPosiciones.setAdapter(adapter);
                     } else {
-                        Toast.makeText(getContext(), "No se encontraron equipos para el idLiga y temporada proporcionados.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "El id o la temporada de liga  ingresada no es correcta.", Toast.LENGTH_LONG).show();
                     }
                 } else {
                     Toast.makeText(getContext(), "Error en la respuesta de la API. Inténtalo de nuevo.", Toast.LENGTH_LONG).show();
