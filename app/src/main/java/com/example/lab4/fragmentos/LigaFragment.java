@@ -125,13 +125,13 @@ public class LigaFragment extends Fragment {
                         Toast.makeText(getContext(), "No se encontraron ligas para el país: " + country, Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    Toast.makeText(getContext(), "No se encontraron ligas para el país ingresado.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "No se encontraron ligas para el país: " + country, Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<LigaResponsePorPais> call, Throwable t) {
-                Toast.makeText(getContext(), "Error en la conexión: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "No se encontraron ligas para el país: " + country, Toast.LENGTH_SHORT).show();
             }
         });
     }

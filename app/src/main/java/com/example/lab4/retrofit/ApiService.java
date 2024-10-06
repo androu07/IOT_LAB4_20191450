@@ -15,4 +15,11 @@ public interface ApiService {
     @GET("lookuptable.php")
     Call<PosicionesResponse> getPosiciones(@Query("l") String idLiga, @Query("s") String temporada);
 
+    @GET("eventsround.php")
+    Call<ResultadosResponse> getResultados(
+            @Query("id") String idLiga,
+            @Query("r") String ronda,
+            @Query("s") String season
+    );
+
 }

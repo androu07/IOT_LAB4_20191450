@@ -93,16 +93,16 @@ public class PosicionesFragment extends Fragment {
                         adapter = new PosicionesAdapter(equipos);
                         recyclerViewPosiciones.setAdapter(adapter);
                     } else {
-                        Toast.makeText(getContext(), "El id o la temporada de liga  ingresada no es correcta.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "El id o la temporada de liga ingresada no es correcta.", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    Toast.makeText(getContext(), "Error en la respuesta de la API. Inténtalo de nuevo.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "El id o la temporada de liga ingresada no es correcta.", Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onFailure(Call<PosicionesResponse> call, Throwable t) {
-                Toast.makeText(getContext(), "Error en la conexión: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "El id o la temporada de liga ingresada no es correcta.", Toast.LENGTH_SHORT).show();
             }
         });
     }
